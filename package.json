@@ -1,8 +1,8 @@
 {
     "name": "sbit-opreturn",
     "version": "1.0.0",
-    "description": "A demo for storing data on SBit using OP_RETURN",
-    "author": "SBit dev team",
+    "description": "A demo for storing data on Sbit using OP_RETURN",
+    "author": "Sbit dev team",
     "dependencies": {
         "argv": "0.0.2",
         "sbitjs": "^1.0.0"
