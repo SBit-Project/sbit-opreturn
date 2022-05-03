@@ -1,4 +1,4 @@
-const { SBitRPC } = require('sbitjs')
+const { SbitRPC } = require('sbitjs')
 const argv = require('argv')
 
 function parseArgv() {
@@ -6,17 +6,17 @@ function parseArgv() {
         {
             name: 'rpcuser',
             type: 'string',
-            description: 'Username for JSON-RPC connections of SBit',
+            description: 'Username for JSON-RPC connections of Sbit',
         },
         {
             name: 'rpcpassword',
             type: 'string',
-            description: 'Password for JSON-RPC connections of SBit',
+            description: 'Password for JSON-RPC connections of Sbit',
         },
         {
             name: 'rpcport',
             type: 'string',
-            description: 'Port for JSON-RPC connections of SBit',
+            description: 'Port for JSON-RPC connections of Sbit',
         },
         {
             name: 'number',
@@ -36,9 +36,9 @@ function parseArgv() {
     return options
 }
 
-function connectSBit(options) {
+function connectSbit(options) {
     let url = 'http://' + options.rpcuser + ':' + options.rpcpassword + '@127.0.0.1:' + options.rpcport
-    return new SBitRPC(url)
+    return new SbitRPC(url)
 }
 
 async function getTransaction(rpc, txid) {
@@ -103,9 +103,9 @@ async function run() {
     const options = parseArgv()
     console.log('Options are:\n%o', options)
 
-    // connect to SBit
-    const rpc = connectSBit(options)
-    // console.log('SBit RPC is:\n%o', rpc)
+    // connect to Sbit
+    const rpc = connectSbit(options)
+    // console.log('Sbit RPC is:\n%o', rpc)
 
     // show message
     await show(rpc, options)
