@@ -1,5 +1,5 @@
 # sbit-opreturn
-A demo for storing data on SBit using OP_RETURN
+A demo for storing data on Sbit using OP_RETURN
 
 # How to use
 1. Download the code and install dependencies.
@@ -9,12 +9,12 @@ $ cd sbit-opreturn
 $ npm install
 ```
 
-2. Start a SBit node and make sure there are some coins in the wallet.
+2. Start a Sbit node and make sure there are some coins in the wallet.
 ```
 sbitd -rpcuser=sbit -rpcpassword=opreturn -testnet -daemon
 ```
 
-3. Send text to SBit using OP_RETURN.
+3. Send text to Sbit using OP_RETURN.
 ```
 $ node send.js --help
 
@@ -25,13 +25,13 @@ Usage: send.js [options]
 		'send.js -h' or 'send.js --help'
 
 	--rpcuser
-		Username for JSON-RPC connections of SBit
+		Username for JSON-RPC connections of Sbit
 
 	--rpcpassword
-		Password for JSON-RPC connections of SBit
+		Password for JSON-RPC connections of Sbit
 
 	--rpcport
-		Port for JSON-RPC connections of SBit
+		Port for JSON-RPC connections of Sbit
 
 	--gas
 		Gas used to pay the transaction
@@ -62,13 +62,13 @@ Usage: show.js [options]
 		'show.js -h' or 'show.js --help'
 
 	--rpcuser
-		Username for JSON-RPC connections of SBit
+		Username for JSON-RPC connections of Sbit
 
 	--rpcpassword
-		Password for JSON-RPC connections of SBit
+		Password for JSON-RPC connections of Sbit
 
 	--rpcport
-		Port for JSON-RPC connections of SBit
+		Port for JSON-RPC connections of Sbit
 
 	--number
 		Number of blocks go through
